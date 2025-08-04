@@ -4,4 +4,6 @@ services:
     env: node
     buildCommand: npm install
     startCommand: npm start
-    rootDir: .￼Enter
+    rootDir: .
+    plan: free
+    autoDeploy: true
