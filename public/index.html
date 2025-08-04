@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THUGKEED WHATSAPP BREAKER</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #0f0;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      text-shadow: 0 0 10px red;
+    }
+
+    #terminal {
+      background-color: black;
+      padding: 1rem;
+      margin: 1rem;
+      height: 400px;
+      overflow-y: auto;
+      border: 2px solid #f00;
+      box-shadow: 0 0 10px #f00;
+    }
+
+    button {
+      margin: 0.3rem;
+      padding: 0.8rem 1.2rem;
+      background: #111;
+      color: #f00;
+      border: 1px solid red;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: red;
+      color: black;
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .loading {
+      color: yellow;
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💀 THUGKEED WHATSAPP BREAKER 💀</h1>
+  <div class="btns">
+    <button onclick="runTool('Brute Force', ['Connecting to server...', 'Attacking login form...', 'Bypassing 2FA...', 'Password: 123456'])">Brute Force</button>
+    <button onclick="runTool('Dump Chats', ['Fetching chats...', 'Decrypting...', 'Exported 4,321 chats.'])">Dump Chats</button>
+    <button onclick="runTool('Clone WhatsApp', ['Initiating clone...', 'Injecting session token...', 'Clone ready. Login link: thugkeed.com/clone'])">Clone WhatsApp</button>
+    <button onclick="runTool('Bypass Meta Firewall', ['Injecting payload...', 'Access granted.', 'Meta protection bypassed!'])">Bypass Meta Firewall</button>
+    <button onclick="runTool('Deploy to Dark Web', ['Encrypting payload...', 'Uploading to .onion server...', 'Dark Web deployment complete.'])">Deploy to Dark Web</button>
+    <button onclick="runTool('Live Tracker', ['Pinging device...', 'Triangulating...', 'Located: Lagos, Nigeria.'])">Live Tracker</button>
+    <button onclick="runTool('Gallery Fetcher', ['Fetching media files...', 'Extracted 138 photos, 42 videos.'])">Gallery Fetcher</button>
+    <button onclick="runTool('Group Chat Spy', ['Scanning groups...', 'Monitoring WhatsApp groups...', 'Accessed 5 active groups.'])">Group Chat Spy</button>
+    <button onclick="runTool('Voice Note Cracker', ['Loading audio module...', 'Decrypting voice data...', 'Transcription: "Don’t tell anyone."'])">Voice Note Cracker</button>
+    <button onclick="runTool('--help', ['Available commands:', '- brute-force', '- dump-chats', '- clone-whatsapp', '- tracker', '- darkweb-deploy', '- media-fetcher', '- group-spy', '- vnote-cracker'])">--help</button>
+  </div>
+  <div id="terminal"></div>
+
+  <script>
+    const terminal = document.getElementById('terminal');
+
+    function runTool(name, steps) {
+      terminal.innerHTML += `\n> ${name} started...\n`;
+      let i = 0;
+      const runStep = () => {
+        if (i < steps.length) {
+          const loading = document.createElement('div');
+          loading.innerHTML = `<span class="loading">${steps[i]}</span>`;
+          terminal.appendChild(loading);
+          terminal.scrollTop = terminal.scrollHeight;
+          setTimeout(() => {
+            loading.innerHTML = `[+] ${steps[i]}`;
+            i++;
+            runStep();
+          }, 1200 + Math.random() * 800);
+        } else {
+          terminal.innerHTML += `[✔] ${name} completed.\n\n`;
+          terminal.scrollTop = terminal.scrollHeight;
+        }
+      };
+      runStep();
+    }
+  </script>
+</body>
+</html>
