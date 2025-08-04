@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: thugkeed-whatsapp-breaker
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: .￼Enter
