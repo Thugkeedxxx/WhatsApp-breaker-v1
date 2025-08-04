@@ -1,0 +1,12 @@
+{
+  "name": "thugkeed-whatsapp-breaker",
+  "version": "1.0.0",
+  "description": "Fake WhatsApp hack tool web service by THUGKEED",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
